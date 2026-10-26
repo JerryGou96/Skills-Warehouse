@@ -1,0 +1,9 @@
+{
+  "name": "skill-library-audit",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw CLI and agent tools",
+    "skill-creator skill (including scripts/quick_validate.py)",
+    "Target repository validator and proper YAML parser"
+  ]
+}

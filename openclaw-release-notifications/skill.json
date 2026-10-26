@@ -1,0 +1,7 @@
+{
+  "name": "openclaw-release-notifications",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw CLI and agent tools"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "agent-memory-audit",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw CLI and agent tools",
+    "QMD CLI only for AgentBrain installations"
+  ]
+}

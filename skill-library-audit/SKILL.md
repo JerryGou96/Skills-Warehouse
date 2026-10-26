@@ -1,0 +1,14 @@
+---
+name: skill-library-audit
+description: "After local skills are reorganized or migrated, verify agent discovery, resource references, automation bindings, and deployed-copy consistency."
+---
+
+# Skill library audit
+
+1. Read skill-creator and the skill repository README, migration and maintenance documents before testing, because intended agent-local scope and compatibility links determine which absences are defects. Keep this audit read-only unless repairs are requested.
+2. Run `openclaw skills check --json` and `openclaw skills list --json`; repeat `openclaw skills --agent <id> check --json` for affected agents. Record eligible, modelVisible, disabled, blocked, notInjected and missingRequirements separately, because intentionally disabled skills are not loading failures. Compare repository packages with each agent’s eligible list; label a valid but uninstalled package separately from a broken installation.
+3. Inspect canonical targets of skill-directory symlinks and verify each target exists. Compare deployed copies with canonical source files byte-for-byte, separating executable instructions/resources from metadata-only differences. Check agent discovery independently of path existence, because readable cross-directory workspace links need not be discovered as skills. Follow the repository installer for managed deployment copies rather than inventing a second source of truth.
+4. Run the repository’s documented validator and lock/content-hash checks, then skill-creator’s `scripts/quick_validate.py <skill-directory>` where appropriate. If quick_validate rejects `description: >` as an angle bracket, inspect whether PyYAML is available and whether its fallback parser retained the YAML folding marker; verify the description with a proper YAML parser or actual OpenClaw discovery before calling it invalid. Do not rewrite valid frontmatter solely to silence this fallback error.
+5. Resolve resource references relative to each SKILL.md directory, retaining `../` segments and cross-skill dependency prefixes. Prefer the repository reference validator over a regex that extracts only `references/...`, because stripping a parent path creates false missing-file reports. Verify required dependency packages are also deployed.
+6. Inspect existing automations using the scheduler tool, or `openclaw cron list --json` for read-only inspection. Extract explicit SKILL.md paths and named skill bindings from payloads; verify they resolve to the intended canonical skill after renames. Report stale bindings without changing schedules or executing business workflows.
+7. Report loading results, package/reference validation, intended scope exceptions, and substantive versus metadata-only drift. State explicitly that static discovery and reference checks do not prove financial APIs or other business workflows end-to-end. Use concise Chinese when requested and do not claim repairs when only an audit ran.

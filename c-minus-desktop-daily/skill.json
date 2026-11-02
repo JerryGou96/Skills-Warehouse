@@ -1,0 +1,11 @@
+{
+  "name": "c-minus-desktop-daily",
+  "version": "1.0.0",
+  "dependencies": [
+    "macOS with open and authenticated Discord desktop/CDP",
+    "Node.js >=20",
+    "@jackwener/opencli 1.8.7 and ws 8.x in an isolated npm runtime",
+    "Python >=3.9 with IANA timezone data",
+    "OpenClaw file/message/scheduler tools and discord-reader skill"
+  ]
+}

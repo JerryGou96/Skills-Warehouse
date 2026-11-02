@@ -13,5 +13,6 @@ Portable, locally authored OpenClaw skills. Each directory contains agent instru
 - [discover-repository-skills](discover-repository-skills/README.md)
 - [x-list-sentiment-review](x-list-sentiment-review/README.md)
 - [local-backup-audit](local-backup-audit/README.md)
+- [c-minus-desktop-daily](c-minus-desktop-daily/README.md)
 
 Read each package’s dependency and validation limits before use. No credentials, account data or local configuration are included. No license grant is implied; see each ORIGIN.md.

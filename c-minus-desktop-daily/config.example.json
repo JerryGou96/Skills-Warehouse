@@ -1,0 +1,11 @@
+{
+  "output_dir": "./private-reviews",
+  "runtime_dir": "./discord-reader-runtime",
+  "timezone": "America/Los_Angeles",
+  "source_guild_id": "SET_SOURCE_GUILD_ID",
+  "source_channel_id": "SET_SOURCE_CHANNEL_ID",
+  "author_id": "SET_VERIFIED_AUTHOR_ID",
+  "destination_account": "SET_DESTINATION_ACCOUNT",
+  "destination_channel_id": "SET_DESTINATION_CHANNEL_ID",
+  "cdp_endpoint": "http://127.0.0.1:9232"
+}

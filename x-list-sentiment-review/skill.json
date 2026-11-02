@@ -1,0 +1,8 @@
+{
+  "name": "x-list-sentiment-review",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw browser, web_search and web_fetch",
+    "browser-automation skill and authenticated X browser profile"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "discover-repository-skills",
+  "version": "1.0.0",
+  "dependencies": [
+    "Git and authenticated GitHub CLI (gh)",
+    "OpenClaw web, browser and file tools; github and discord-reader skills",
+    "Optional Node.js/npm, opencli, ws and ripgrep for authorized desktop installation/report branches",
+    "Python 3 for scheduled-report branch; separately configured desktop endpoint/runtime"
+  ]
+}

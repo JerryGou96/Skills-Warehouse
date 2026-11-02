@@ -1,0 +1,9 @@
+{
+  "name": "discord-agent-provisioning",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw CLI, browser, session and messaging tools",
+    "configure-channel and browser-automation skills",
+    "Operator-accessible terminal for masked credentials"
+  ]
+}

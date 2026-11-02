@@ -1,0 +1,11 @@
+{
+  "name": "financial-link-index-review",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw web/browser, file and image tools",
+    "browser-automation and substack-reader skills; earnings-review skill for earnings branch",
+    "Poppler (pdfinfo, pdftotext, pdftoppm) for PDFs",
+    "Python 3 and yfinance for quote branch",
+    "Configured research vault and index tools for archival"
+  ]
+}

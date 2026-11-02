@@ -1,0 +1,9 @@
+{
+  "name": "x-list-digest",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw browser and automations tools/CLI",
+    "browser-automation skill; authenticated X browser profile",
+    "Optional opencli or Bird CLI, selected only after capability verification"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "fomc-cross-asset-reaction",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw session_status, web_search and web_fetch",
+    "Configured research vault with existing FOMC tracker/archive; QMD for indexing"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "agent-liveness-verification",
+  "version": "1.0.0",
+  "dependencies": [
+    "OpenClaw CLI, session and scheduler tools",
+    "diagnose-gateway skill"
+  ]
+}

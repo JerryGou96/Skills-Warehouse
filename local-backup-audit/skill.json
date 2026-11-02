@@ -1,0 +1,9 @@
+{
+  "name": "local-backup-audit",
+  "version": "1.0.0",
+  "dependencies": [
+    "macOS df, du, tmutil and launchd inspection tools",
+    "Python 3 standard library",
+    "Authorized cleanup tool only for separately authorized cleanup branch"
+  ]
+}
